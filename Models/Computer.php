@@ -24,4 +24,12 @@ class Computer
    {
       return $this->cpu;
    }
+   public function getRAM()
+   {
+      return $this->ram;
+   }
+   public function getStorage()
+   {
+      return $this->storage;
+   }
 }
