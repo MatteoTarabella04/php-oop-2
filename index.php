@@ -10,13 +10,13 @@ aggiungere un metodo che stampi la stringa con tutte le info del dispositivo (ol
 */
 class Computer
 {
-   protected $brand;
-   protected $model;
-   protected $cpu;
-   protected $ram;
-   protected $storage;
+   /*    protected $brand;
+      protected $model;
+      protected $cpu;
+      protected $ram;
+      protected $storage; */
 
-   public function __construct(string $brand, string $model, string $cpu, string $ram, string $storage)
+   public function __construct(protected string $brand, protected string $model, protected string $cpu, protected string $ram, protected string $storage)
    {
       $this->brand = $brand;
       $this->model = $model;
@@ -54,17 +54,16 @@ class Laptop extends Computer
    public function __construct(protected string $brand, protected string $model, protected string $cpu, protected string $ram, protected string $storage, protected string $screen_size, protected string $battery)
    {
       parent::__construct($brand, $model, $cpu, $ram, $storage);
-      $this->screen_size = $screen_size;
-      $this->battery = $battery;
+      $this->screen_size = $screen_size . '"';
+      $this->battery = $battery . 'mAh';
    }
 }
 
 $personalPcs = [
-   $pc = new Computer('Asus', 'Zenbook', 'Rayzen 7', '2 x 8', '1T'),
-
+   $pc_1 = new Desktop("MSI", "M-COMP-12445", "Intel Core i7", "2 x 8", "1T", "ASUS Tuf Gaming ABC-23-Z", "NVIDIA GeForce RTX 4020"),
+   $pc_1 = new Laptop("Asus", "ZenBook", "Intel Core i5", "8", "512 SSD", "24", "8000"),
 ];
 
 var_dump($personalPcs);
-
 
 ?>
