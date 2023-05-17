@@ -1,6 +1,6 @@
 <?php
 $personalPcs = [
-   $pc_1 = new Desktop(
+   new Desktop(
       "MSI",
       "M-COMP-12445",
       "Intel Core i7",
@@ -10,7 +10,7 @@ $personalPcs = [
       "NVIDIA GeForce RTX 4020"
    ),
 
-   $pc_2 = new Laptop(
+   new Laptop(
       "Asus",
       "ZenBook",
       "Intel Core i5",
@@ -19,7 +19,7 @@ $personalPcs = [
       "15",
       "8000"
    ),
-   $pc_3 = new Desktop(
+   new Desktop(
       "Dell",
       "HH-JK12",
       "Intel Core i3",
@@ -28,7 +28,7 @@ $personalPcs = [
       "ASUS Prime B450M-A",
       "AMD Radeon RX 600 XT"
    ),
-   $pc_4 = new Laptop(
+   new Laptop(
       "Lenovo",
       "Legion",
       "Intel Core i9-12900HX",
