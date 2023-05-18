@@ -7,4 +7,14 @@ class Desktop extends Computer
       $this->gpu = $gpu;
       $this->mbo = $mbo;
    }
+
+   public function getGpu()
+   {
+      return $this->gpu;
+   }
+
+   public function getMbo()
+   {
+      return $this->mbo;
+   }
 }
