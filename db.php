@@ -6,8 +6,8 @@ $personalPcs = [
       "Intel Core i7",
       "2 x 8",
       "1T",
+      "NVIDIA GeForce RTX 4020",
       "ASUS Tuf Gaming ABC-23-Z",
-      "NVIDIA GeForce RTX 4020"
    ),
 
    new Laptop(
@@ -25,8 +25,8 @@ $personalPcs = [
       "Intel Core i3",
       "4",
       "500 Gb",
+      "AMD Radeon RX 600 XT",
       "ASUS Prime B450M-A",
-      "AMD Radeon RX 600 XT"
    ),
    new Laptop(
       "Lenovo",
