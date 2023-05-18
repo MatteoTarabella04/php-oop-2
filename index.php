@@ -152,6 +152,15 @@ function getComputerType($pc)
                            <?= getComputerType($pc) == 'Desktop' ? $pc->getMbo() : $pc->getBattery() ?>
                         </div>
                      </div>
+                     <div class="card-footer d-flex justify-content-between align-items-center">
+                        <div>
+                           <span><b>Price:</b></span>
+                           <?= $pc->getPrice() ?>
+                        </div>
+                        <button class="btn btn-outline-success">
+                           Buy Now
+                        </button>
+                     </div>
                   </div>
                </div>
 
