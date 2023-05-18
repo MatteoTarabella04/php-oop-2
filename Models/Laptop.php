@@ -7,4 +7,13 @@ class Laptop extends Computer
       $this->screen_size = $screen_size . '"';
       $this->battery = $battery . 'mAh';
    }
+
+   public function getInches()
+   {
+      return $this->screen_size;
+   }
+   public function getBattery()
+   {
+      return $this->battery;
+   }
 }
