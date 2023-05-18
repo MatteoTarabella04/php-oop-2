@@ -102,7 +102,10 @@ function getComputerType($pc)
       </div>
 
       <div class="container">
-         <div class="row row-cols-2">
+         <h2 class="text-muted text-center my-5">
+            Our Bilds
+         </h2>
+         <div class="row row-cols-2 mb-4">
             <?php foreach ($personalPcs as $pc): ?>
                <div class="col mb-3">
                   <div class="card">
@@ -131,6 +134,22 @@ function getComputerType($pc)
                         <div>
                            <span><b>Storage:</b></span>
                            <?= $pc->getStorage() ?>
+                        </div>
+                        <div>
+                           <span>
+                              <b>
+                                 <?= getComputerType($pc) == 'Desktop' ? 'GPU:' : 'Screen Inches:' ?>
+                              </b>
+                           </span>
+                           <?= getComputerType($pc) == 'Desktop' ? $pc->getGpu() : $pc->getInches() ?>
+                        </div>
+                        <div>
+                           <span>
+                              <b>
+                                 <?= getComputerType($pc) == 'Desktop' ? 'MBO:' : 'Battery:' ?>
+                              </b>
+                           </span>
+                           <?= getComputerType($pc) == 'Desktop' ? $pc->getMbo() : $pc->getBattery() ?>
                         </div>
                      </div>
                   </div>
