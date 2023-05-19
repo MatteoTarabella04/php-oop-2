@@ -35,15 +35,15 @@ class Computer
    }
    public function getPrice()
    {
+      if (!is_numeric($this->price)) {
+         throw new Exception('Is not a number');
+      }
       return $this->price . '$';
    }
 
    /* set */
-   public function setPrice(float $price)
-   {
-      if (!is_numeric($price)) {
-         throw new Exception('Is not a number');
-      }
-      return $this->price = $price;
-   }
+   /*   public function setPrice(float $price)
+     {
+        
+     } */
 }
